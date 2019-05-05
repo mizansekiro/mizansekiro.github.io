@@ -1,0 +1,177 @@
+h1 {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+
+.android {
+    width: 300px;
+    height: 435px;
+    margin: 0 auto;
+}
+
+.head,
+.torso,
+.left_arm,
+.right_arm,
+.left_leg,
+.right_leg {
+    background: #03A7DA;
+    
+}
+
+.android:hover .head,
+.android:hover .torso,
+.android:hover .left_arm,
+.android:hover .right_arm,
+.android:hover .left_leg,
+.android:hover .right_leg {
+    background: red;
+    transition: 5s;
+
+}
+
+.head {
+    width: 200px;
+    height: 150px;
+    border-radius: 200px 200px 0px 0px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 10px;
+
+}
+
+.android:hover .head {
+    width: 300px;
+    transition: 1s ease-in-out;
+
+
+}
+
+.left_eyes,
+.right_eyes {
+    background: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: 5s;
+
+}
+
+.right_eyes {
+    margin-left: 80px;
+}
+
+.android:hover .right_eyes {
+    transform: scale(3.0);
+    background: black;
+}
+
+.android:hover .left_eyes {
+    transform: scale(3.0);
+    background: black;
+}
+
+.eyes {
+    display: flex;
+    position: absolute;
+    left: 20%;
+    top: 70%;
+}
+
+
+
+.left_arm,
+.right_arm {
+    width: 40px;
+    height: 125px;
+    border-radius: 100px;
+}
+
+
+.left_arm {
+    margin-right: 10px;
+    transform-origin: left top;
+    transition: transform 1s;
+}
+
+.android:hover .left_arm {
+    transform: rotateZ(180deg);
+}
+
+.right_arm {
+    margin-left: 10px;
+    transform-origin: top left;
+    transition: transform 1s;
+}
+
+.right_arm:hover {
+    transform: rotateZ(-180deg);
+}
+
+.torso {
+    width: 200px;
+    height: 200px;
+    border-radius: 0 0 50px 50px;
+    transition: 1s;
+}
+
+.upper_body {
+    height: 150px;
+    width: 300px;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+
+.lower_body {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.left_leg,
+.right_leg {
+    width: 40px;
+    height: 125px;
+    border-radius: 100px;
+
+}
+
+.left_leg {
+
+    margin-left: 45px;
+    transition: 0.3s;
+
+}
+
+.left_leg:hover {
+    transform: rotate(20deg);
+    
+}
+
+.right_leg {
+    margin-left: 30px;
+    transition: 1s;
+}
+
+.android:hover .right_leg {
+    transform: rotate(30900deg);
+}
+
+
+
+
+
+
+
+
+.android:hover .left_leg {
+    transform: rotate(20deg);
+}
+
+.android:hover .right_arm {
+    transform: rotate(1080deg);
+}
